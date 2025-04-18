@@ -1,7 +1,8 @@
 # Cào Dữ Liệu Bóng Đá và Dự Đoán Kết Quả Trận Đấu
 
 Dự án này cào dữ liệu bóng đá từ các trang web và sử dụng dữ liệu đó để thực hiện dự đoán kết quả các trận đấu. Mô hình dự đoán được xây dựng dựa trên các đặc trưng của các đội bóng, tỷ số trận đấu trước đó, và các yếu tố khác như phong độ đội bóng, lịch sử đối đầu, và các chỉ số thống kê khác.
-
+Trang web được dùng để cào dữ liệu ở đây là : **https://fbref.com/en/comps/9/Premier-League-Stats**
+Và ở đây tôi chỉ cào dữ liệu từ năm 2024 đến năm 2017 , nếu bạn muốn thêm data để training thì có thể chỉnh lại biến **years** nhiều hơn
 ## Yêu Cầu
 
 Trước khi bắt đầu, bạn cần cài đặt các thư viện sau:
