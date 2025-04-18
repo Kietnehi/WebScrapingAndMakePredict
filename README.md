@@ -6,7 +6,7 @@ Dự án này cào dữ liệu bóng đá từ các trang web và sử dụng d�
 
 Trước khi bắt đầu, bạn cần cài đặt các thư viện sau:
 
-1. **Python 3.x** (đảm bảo rằng bạn đã cài đặt Python 3 trở lên)
+1. **Python 3.11** (đảm bảo rằng bạn đã cài đặt Python 3 trở lên)
 2. Các thư viện Python cần thiết:
    - pandas
    - numpy
@@ -15,6 +15,14 @@ Trước khi bắt đầu, bạn cần cài đặt các thư viện sau:
    - selenium
    - webdriver-manager
    - scikit-learn
+   - matplotlib
+   - seaborn
+   - xgboost
+## Trực quan hóa dữ liệu 
+Biểu đồ heatmap thể hiện sự tương quan giữa các dữ liệu sau khi đã preprocessing data
+![Ảnh mô tả](images/output.png)
+
+## Kết quả Training
 
 ### Cài Đặt Thư Viện
 
