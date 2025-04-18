@@ -20,7 +20,7 @@ Trước khi bắt đầu, bạn cần cài đặt các thư viện sau:
 
 1. Clone dự án về máy tính của bạn:
    ```bash
-   git clone [https://github.com/your-username/project-name.git](https://github.com/Kietnehi/Data_Analysis_Human_Resource.git)
+   git clone [[https://github.com/your-username/project-name.git](https://github.com/Kietnehi/Data_Analysis_Human_Resource.git)](https://github.com/Kietnehi/WebScrapingAndMakePredict.git)
 2.Cài đặt các thư viện cần thiết từ file requirements.txt:
   ```bash
   pip install -r requirements.txt
