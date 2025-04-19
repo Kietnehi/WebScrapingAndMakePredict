@@ -73,8 +73,10 @@ Dưới đây là các metrics để đánh giá hiệu quả của mô hình.
 2.Cài đặt các thư viện cần thiết từ file requirements.txt:
   ```bash
   pip install -r requirements.txt
-  ```bash
-3.Ở đây tôi có 2 file để chạy là prediction.ipynb và predict.py
+ ---
+
+### Hướng dẫn chạy 
+ .Ở đây tôi có 2 file để chạy là prediction.ipynb và predict.py
 Trong dự án này, tôi cung cấp hai tệp chính để chạy:
 
 - **`prediction.ipynb`**: Đây là tệp Jupyter Notebook dùng để huấn luyện mô hình học máy (machine learning) và học sâu (deep learning).
