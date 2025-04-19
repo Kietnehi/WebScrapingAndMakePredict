@@ -75,7 +75,8 @@ Dưới đây là các metrics để đánh giá hiệu quả của mô hình.
   pip install -r requirements.txt
  ---
 
-### Hướng dẫn chạy 
+
+3.Hướng dẫn chạy 
  .Ở đây tôi có 2 file để chạy là prediction.ipynb và predict.py
 Trong dự án này, tôi cung cấp hai tệp chính để chạy:
 
