@@ -19,6 +19,8 @@ Trước khi bắt đầu, bạn cần cài đặt các thư viện sau:
    - matplotlib
    - seaborn
    - xgboost
+   - pytorch
+   - argparse
 # Dự Án Trực Quan Hóa Dữ Liệu và Đánh Giá Mô Hình
 
 ## 1. Trực Quan Hóa Dữ Liệu
@@ -71,3 +73,50 @@ Dưới đây là các metrics để đánh giá hiệu quả của mô hình.
 2.Cài đặt các thư viện cần thiết từ file requirements.txt:
   ```bash
   pip install -r requirements.txt
+3.Ở đây tôi có 2 file để chạy là prediction.ipynb và predict.py
+Trong dự án này, tôi cung cấp hai tệp chính để chạy:
+
+- **`prediction.ipynb`**: Đây là tệp Jupyter Notebook dùng để huấn luyện mô hình học máy (machine learning) và học sâu (deep learning).
+- **`predict.py`**: Tệp Python này được thiết kế với sự hỗ trợ của thư viện `Argparse`, giúp bạn dễ dàng điều chỉnh các tham số thông qua dòng lệnh.
+
+### Cách Chạy `predict.py`
+# Hướng dẫn sử dụng tham số huấn luyện mô hình
+
+## Mô tả
+Đây là hướng dẫn sử dụng các tham số cần thiết để huấn luyện một mô hình học máy. Các tham số này có thể được truyền vào thông qua dòng lệnh khi chạy script huấn luyện.
+
+## Các tham số
+
+### 1. `--num_epochs`
+- **Mô tả**: Số lượng epoch cho quá trình huấn luyện mô hình. Một epoch là một lượt quét qua toàn bộ dữ liệu huấn luyện. 
+- **Mặc định**: 100
+- **Cách sử dụng**: 
+    - Ví dụ: `--num_epochs 50` sẽ huấn luyện mô hình trong 50 epoch.
+  
+### 2. `--learning_rate`
+- **Mô tả**: Tốc độ học (learning rate) quyết định mức độ điều chỉnh trọng số của mô hình trong mỗi bước cập nhật. Tốc độ học quá cao có thể khiến mô hình không hội tụ, trong khi tốc độ quá thấp có thể làm chậm quá trình huấn luyện.
+- **Mặc định**: 0.001
+- **Cách sử dụng**: 
+    - Ví dụ: `--learning_rate 0.01` sẽ đặt tốc độ học là 0.01.
+
+### 3. `--trained_models_dir`
+- **Mô tả**: Thư mục chứa các mô hình đã huấn luyện. Sau khi quá trình huấn luyện hoàn tất, mô hình sẽ được lưu trữ vào thư mục này.
+- **Mặc định**: `./model`
+- **Cách sử dụng**: 
+    - Ví dụ: `--trained_models_dir ./saved_models` sẽ lưu các mô hình vào thư mục `saved_models`.
+
+### 4. `--checkpoint_path`
+- **Mô tả**: Đường dẫn tới file checkpoint. Đây là một tham số tùy chọn. Nếu bạn không muốn sử dụng checkpoint, có thể bỏ qua tham số này. Checkpoint lưu trữ trạng thái của mô hình tại một thời điểm nhất định trong quá trình huấn luyện, giúp bạn có thể tiếp tục huấn luyện từ trạng thái đó hoặc sử dụng cho suy luận.
+- **Mặc định**: Không có (không yêu cầu cung cấp tham số này)
+- **Cách sử dụng**: 
+    - Ví dụ: `--checkpoint_path ./model/checkpoint.pth` sẽ chỉ định đường dẫn đến file checkpoint.
+
+### Cách sử dụng
+
+Để huấn luyện mô hình với các tham số trên, bạn có thể chạy script huấn luyện thông qua dòng lệnh với cú pháp sau:
+
+Để chạy `predict.py`, bạn có thể sử dụng lệnh sau trong Command Line:
+
+```bash
+python predict.py --num_epochs **100** --learning_rate **0.001** --trained_models_dir **./model** --checkpoint_path **./model/checkpoint_epoch_29.pth**
+
