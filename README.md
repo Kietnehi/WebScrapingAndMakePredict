@@ -73,6 +73,7 @@ Dưới đây là các metrics để đánh giá hiệu quả của mô hình.
 2.Cài đặt các thư viện cần thiết từ file requirements.txt:
   ```bash
   pip install -r requirements.txt
+
 3.Ở đây tôi có 2 file để chạy là prediction.ipynb và predict.py
 Trong dự án này, tôi cung cấp hai tệp chính để chạy:
 
