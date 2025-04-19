@@ -118,5 +118,5 @@ Trong dự án này, tôi cung cấp hai tệp chính để chạy:
 Để chạy `predict.py`, bạn có thể sử dụng lệnh sau trong Command Line:
 
 ```bash
-python predict.py --num_epochs **100** --learning_rate **0.001** --trained_models_dir **./model** --checkpoint_path **./model/checkpoint_epoch_29.pth**
+python predict.py --num_epochs 100 --learning_rate 0.001 --trained_models_dir ./model --checkpoint_path ./model/checkpoint_epoch_29.pth
 
